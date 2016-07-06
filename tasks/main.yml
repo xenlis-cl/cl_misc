@@ -1,0 +1,7 @@
+---
+
+- name: create python script to get external IP
+  template:
+     src=get_ip.py.j2
+     dest=/usr/local/bin/get_ip.py
+     mode=0755
